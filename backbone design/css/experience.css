@@ -1,0 +1,57 @@
+/*
+* { 
+  border: 1px solid black; 
+  box-sizing: border-box;
+}
+*/
+
+body {
+    margin:30px;
+}
+
+.top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.top-menu-buttons {
+  font-size: 24px;
+}
+
+.experience-intro {
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    padding-top: 2em;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.experience-area {
+    width: 80%;
+    margin: auto;
+}
+
+.experience-card {
+    display: flex;
+    margin: auto;
+    margin-bottom:50px;
+    gap: 100px;
+}
+
+.experience-yearposition {
+    display:flex;
+    margin-top: 5px;
+    gap: 50px;
+}
+
+.work-details {
+    width: 60%;
+    margin-top: 0px;
+}
+
+.work-company {
+    margin-top: 0px;
+}

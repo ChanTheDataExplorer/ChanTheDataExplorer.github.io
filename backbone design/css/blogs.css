@@ -1,0 +1,50 @@
+/*
+* { 
+  border: 1px solid black; 
+  box-sizing: border-box;
+}
+*/
+
+
+body {
+    margin:30px;
+    padding:0;
+}
+
+.top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.top-menu-buttons {
+  font-size: 24px;
+}
+
+.blogs-intro {
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    padding-top: 2em;
+    margin-top: 70px;
+}
+
+.blogs-area {
+    width: 80%;
+    margin: auto;
+}
+
+.blogs-card {
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.blogs-image {
+    width: 180px;
+    margin: auto;
+    display: block;
+  }
+
