@@ -9,11 +9,12 @@
   }
 /**/
 body {
+    height: 100%;
+    position: relative;
     background-color: #ffffff;
-    margin: 0px;
+    margin-bottom: 0px;
 
     font-family: 'Courier New', Courier, monospace;
-
     color: rgba(0, 0, 0, 0.658);
 }
 
@@ -289,6 +290,7 @@ body {
         width: 50%;
 
         margin-top: 15em;
+        margin-bottom: 10em;
         margin-left: auto;
         margin-right: auto;
 
@@ -301,13 +303,13 @@ body {
             justify-content: left;
             text-align:justify;
 
-            width: 70%;
+            width: 80%;
 
             line-height: 1.4em;
         }
 
         .aboutme-image {
-            width: 300px;
+            width: 80%;
             height: auto;
         }
     
@@ -344,18 +346,15 @@ body {
             border-radius: 5px;
             height: 1.5em;
         }
-        
-        
-#footer {
-    background-color: #1a2a2e;
-    margin-top: 10em;
-
-    padding: 1em;
-
-    bottom: 0;
-    left: 0;
+   
+  
+footer {
+    position: relative;
+    bottom: 0em;
     width: 100%;
-}
+    text-align: center;
+    
+    }
 
     .footer-container {
         display: flex;
@@ -376,29 +375,13 @@ body {
     }
 
     .platform-images {
-        background-color: rgb(255, 255, 255);
-        border-radius: 0.2em;
         height: 1.5em;
-
-        padding: 0.1em;
     }
 
     .platform-images-medium {
-        background-color: rgb(255, 255, 255);
-        border-radius: 0.2em;
         height: 1.5em;
-
-        padding: 0.1em;
     }
 
-#about-footer {
-    background-color: #1a2a2e;
-    margin-top: 10em;
-
-    padding: 1em;
-    
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
+    footer p {
+        font-size: 0.8em;
+    }
