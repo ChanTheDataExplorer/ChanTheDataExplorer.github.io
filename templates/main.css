@@ -69,7 +69,7 @@ body {
 }
 
 .navbar .logo {
-    font-size: 1.2em;
+    font-size: 1.0em;
     font-weight: bold;
     color: #7a7a7a;
 }
@@ -114,18 +114,18 @@ body {
 
 .bar {
     display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px 0;
+    width: 1.5em;
+    height: 0.12em;
+    margin: 0.15em 0;
     transition: all 0.3s ease;
     background-color: black;
 }
 
 @media screen and (max-width: 68em) {
     body {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
-    
+
     .hamburger {
         display: block;
         cursor: pointer;
@@ -165,7 +165,7 @@ body {
 /* BODY */
 #intro {
     width: 50%;
-
+    
     margin-top: 10em;
     margin-bottom: 5em;
     margin-inline: auto;
@@ -182,7 +182,11 @@ body {
     text-align: center
 }
 
-
+@media screen and (max-width: 68em) {
+    #intro {
+        margin-top: 30%;
+    }
+}
   
 footer {
     position: relative;
