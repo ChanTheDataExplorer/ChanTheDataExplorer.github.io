@@ -125,6 +125,7 @@ body {
     body {
         font-size: 1.5em;
     }
+    
     .hamburger {
         display: block;
         cursor: pointer;
