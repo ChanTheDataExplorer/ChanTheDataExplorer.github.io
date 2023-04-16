@@ -227,7 +227,19 @@ footer {
 }
 
 footer p {
-    font-size: 0.8em;
+    font-size: 1em;
+}
+
+@media screen and (max-width: 68em) {
+    .platform-images {
+        height: 2em;
+    }
+    .platform-images-medium {
+        height: 1.5em;
+    }
+    footer p {
+        font-size: 0.5em;
+    }
 }
 
 /* FOR NEXT IMPLEMENTATION
