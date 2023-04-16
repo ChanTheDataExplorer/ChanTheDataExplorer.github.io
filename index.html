@@ -1,139 +1,289 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Home: Christian Balanquit</title>
-        <link rel="stylesheet" href="templates/main.css">
-    </head>
-    <body>
-        <!--Header-->
-        <section id="header" class="section-wrapper">
-            <div class="container main-menu">
-                <div id="top-left-logo">
-                    <p>ChanTheDataExplorer</p>
-                </div>
-                <nav class="nav-menu-container">
-                    <ul class="nav-menu">
-                        <li class="menu-nav-list"><a class="active link" href="index.html">Home</a></li>
-                        <li class="menu-nav-list"><a class="link" href="experience.html">Experience</a></li>
-                        <li class="menu-nav-list"><a class="link" href="projects.html">Projects</a></li>
+
+<head>
+    <title>Home: Christian Balanquit</title>
+    <link rel="stylesheet" href="templates/main.css">
+</head>
+
+<style>
+
+p {
+    vertical-align: middle;
+}
+
+img {
+    max-width: 100%;
+}
+
+.thumb {
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.thumb-content:hover {
+    width: 100%;
+
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+.thumb:hover {
+    background-color: #002a4e;
+    color: rgb(255, 255, 255);
+}
+
+.link-text {
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+
+    color: rgba(0, 0, 0, 0.658);
+    font-weight: bold;
+}
+
+@media (max-width: 50em) {
+    .intro-card {
+        display: grid;
+        grid-template-columns: repeat( 1, 1fr);
+        grid-column-gap: 2%;
+
+        margin-top: 10em;
+        margin-bottom: 6em;
+        margin-left: 10%;
+        margin-right: 10%;
+
+        align-items: center;
+    }
+    .intro-text {
+        grid-column: 1;
+
+    }
+    .intro-image {
+        grid-column: 1;
+    }
+    .intro-profile-image {
+        display: none;
+    }
+
+    .thumb-content {
+        margin-bottom: 0em;
+    }
+
+    .recent-content-container {
+        display: grid;
+        grid-template-columns: repeat( 1, 1fr);
+
+        margin-bottom: 5em;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .recent-content-1 {
+        grid-column: 1;
+        margin-bottom: 2em;
+    }
+    .recent-content-2 {
+        grid-column: 1;
+        margin-bottom: 2em;
+    }
+    .recent-content-3 {
+        grid-column: 1;
+        margin-bottom: 2em;
+    }
+}
+
+@media screen and (min-width: 50em) {
+    .intro-card {
+        display: grid;
+        grid-template-columns: repeat( 5, 1fr);
+        grid-column-gap: 2%;
+
+        margin-top: 10em;
+        margin-bottom: 6em;
+    }
+    .intro-text {
+        grid-column: 2/4;
+
+    }
+    .intro-image {
+        grid-column: 4;
+    }
+    .intro-profile-image {
+        vertical-align: middle;
+        width: 75%;
+    }
+
+    .thumb-content {
+        margin-bottom: 0.5em;
+    }
+
+    .recent-content-container {
+        display: grid;
+        grid-template-columns: repeat( 5, 1fr);
+        grid-column-gap: 2%;
+
+        margin-bottom: 5em;
+    }
+    .recent-content-1 {
+        grid-column: 2/3;
+    }
+    .recent-content-2 {
+        grid-column: 3/4;
+    }
+    .recent-content-3 {
+        grid-column: 4/5;
+    }
+}
+</style>
+
+<body>
+    <header id="header" class="section-header">
+        <div class="container main-menu">
+            <nav class="navbar">
+                <a class="logo" href='index.html'>ChanTheDataExplorer</a>
+                <ul class="nav-menu">
+                    <li class="menu-nav-list"><a class="active link" href="index.html">Home</a></li>
+                    <li class="menu-nav-list"><a class="link" href="experience.html">Experience</a></li>
+                    <li class="menu-nav-list"><a class="link" href="projects.html">Projects</a></li>
+                    <!--
                         <li class="menu-nav-list"><a class="link" href="blogs.html">Blogs</a></li>
-                        <li class="menu-nav-list"><a class="link" href="about.html">About Me</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
-
-        <!--Intro-->
-        <section id="intro" class="section-wrapper">
-            <div class="home-intro-card">
-                <div class="card-content">
-                    <h2>Hallo!</h2>
-                    <h1>I am Christian Balanquit</h1>
-                    <span class="paragraphs-info">
-                        <p>
-                            Data Enthusiast with interest on continuous improvement and lifelong learning.
-                        </p>
-                    </span>
+                        FOR NEXT IMPLEMENTATION
+                    -->
+                    <li class="menu-nav-list"><a class="link" href="about.html">About Me</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
-                <div class="card-image">
-                    <img class="profile-image" src="images/2x2_ChristianBalanquit.png">
-                </div>
-            </div>
-        </section>
+            </nav>
+        </div>
+    </header>
 
-        <!--Projects-->
-        <section id="content" class="section-wrapper-content">
+
+
+    <section id="intro" class="section-contents">
+        <div class="intro-card">
+            <div class="intro-text">
+                <h2>Hallo!</h2>
+                <h1>I am Christian Balanquit</h1>
+                <span class="paragraphs-intro">
+                    <p>
+                        Data Enthusiast with interest on continuous improvement and lifelong learning.
+                    </p>
+                </span>
+            </div>
+            <div class="intro-image">
+                <img class="intro-profile-image" src="images/2x2_ChristianBalanquit.png">
+            </div>
+        </div>
+    </section>
+
+    <section id="contents" class="section-wrapper-content">
+
+        <div class="project-home">
+
             <div class="content-header">
                 <h1>Recent Projects</h1>
                 <p>Here are some of my recent projects.</p>
             </div>
+
             <div class="recent-content-container">
-                <div class="recent-content-single">
-                    <div class="thumb">
-                        <img class="content-image" src="https://img.fruugo.com/product/0/34/158912340_max.jpg">
+
+                <div class="recent-content-1">
+                    <div class="thumb-content">
+                        <a class="thumb" href="https://github.com/ChanTheDataExplorer/mlzoomcamp_capstone1_chan.git" target="_blank">
+                            <img class="content-image" src="images/kitchenware-image.jpg">
+                            Kitchenware Classification
+                        </a>
                     </div>
-                    <a class="link-text" href="https://github.com/ChanTheDataExplorer/mlzoomcamp_capstone1_chan.git" target="_blank">
-                        Kitchenware Classification
-                    </a>
                     <p>
                         Deep Learning project to predict if an image is a spoon, knife, plate, cup, glass, or a fork.
                     </p>
                 </div>
-                <div class="recent-content-single">
-                    <div class="thumb">
-                        <img class="content-image" src="https://www.talkesport.com/wp-content/uploads/c632b3bc2ec8f30871d02bb21d3e29e2.jpg">
+
+                <div class="recent-content-2">
+                    <div class="thumb-content">
+                        <a class="thumb" href="https://github.com/ChanTheDataExplorer/MLProject_Dota2" target="_blank">
+                            <img class="thumb" src="images/radiant_dire.jpg">
+                            Radiant or Dire?
+                        </a>
                     </div>
-                    <a class="link-text" href="https://github.com/ChanTheDataExplorer/MLProject_Dota2" target="_blank">
-                        Radiant or Dire?
-                    </a>
                     <p>
-                        Machine Learning project to predict the winner of a Dota 2 match 
-                        using pre-game features.
+                        Machine Learning project to predict the winner of a Dota 2 match using pre-game features.
                     </p>
                 </div>
-                <div class="recent-content-single">
-                    <div class="thumb">
-                        <img class="content-image" src="images/spotify-etl.png">
+
+                <div class="recent-content-3">
+                    <div class="thumb-content">
+                        <a class="thumb" href="https://github.com/ChanTheDataExplorer/mlzoomcamp_capstone1_chan.git" target="_blank">
+                            <img class="content-image" src="images/spotify-etl.jpg">
+                            Spotify API Data Pipeline
+                        </a>
                     </div>
-                    <a class="link-text" href="https://github.com/ChanTheDataExplorer/mlzoomcamp_capstone1_chan.git" target="_blank">
-                        Spotify API Data Pipeline
-                    </a>
                     <p>
                         End-to-end ETL project for spotify data.
                     </p>
                 </div>
             </div>
-        </section>
+        </div>
+        
+    </section>
 
-        <!--Blogs-->
-        <section id="content" class="section-wrapper-content">
-            <div class="content-header">
-                <h1>Recent Blogs</h1>
-                <p>Under Construction.</p>
-            </div>
-        </section>
+    <!--FOR NEXT RELEASE
+    <section id="content" class="section-wrapper-content">
+        <div class="content-header">
+            <h1>Recent Blogs</h1>
+            <p>Under Construction.</p>
+        </div>
+    </section>
 
-        <!--Connect FOR NEXT RELEASE
-        <section id="connect" class="section-wrapper-content">
-            <div class="content-header">
-                <h1>Send a mail</h1>
-                <p>Feel free to message me.</p>
-            </div>
-            <div class="connect-container">
-                <div class="form-container">
-                    <div class="mail-form-top">
-                        <div class="mail-form-info">
-                            <label for="fname">Name:</label>
-                            <input type="text" id="fname" name="fname">
-                            <label for="fname">email:</label>
-                            <input type="text" id="fname" name="fname">
-                        </div>
-                        <button>Send mail</button>
+    
+    <section id="connect" class="section-wrapper-content">
+        <div class="content-header">
+            <h1>Send a mail</h1>
+            <p>Feel free to message me.</p>
+        </div>
+        <div class="connect-container">
+            <div class="form-container">
+                <div class="mail-form-top">
+                    <div class="mail-form-info">
+                        <label for="fname">Name:</label>
+                        <input type="text" id="fname" name="fname">
+                        <label for="fname">email:</label>
+                        <input type="text" id="fname" name="fname">
                     </div>
-                    <div class="mail-form-message">
-                        <textarea rows="10" cols="74" name="comment">
-                        </textarea>
-                    </div>
+                    <button>Send mail</button>
+                </div>
+                <div class="mail-form-message">
+                    <textarea rows="10" cols="74" name="comment">
+                    </textarea>
                 </div>
             </div>
-        </section>
-        -->
+        </div>
+    </section>
+    -->
 
-        <footer>
-            <div class="footer-container">
-                <div class="platform-container">
-                    <a class="platform-links" href="https://github.com/ChanTheDataExplorer" target="_blank">
-                        <img class="platform-images" src="images/github.png">
-                    </a>
-                    <a class="platform-links" href="https://www.linkedin.com/in/cbbalanquit" target="_blank">
-                        <img class="platform-images" src="images/linkedin.png">
-                    </a>
-                    <a class="platform-links" href="https://medium.com/@balanquitchristian13" target="_blank">
-                        <img class="platform-images-medium" src="images/medium.png">
-                    </a>
-                </div>
+    <footer>
+        <div class="footer-container">
+            <div class="platform-container">
+                <a class="platform-links" href="https://github.com/ChanTheDataExplorer" target="_blank">
+                    <img class="platform-images" src="images/github.png">
+                </a>
+                <a class="platform-links" href="https://www.linkedin.com/in/cbbalanquit" target="_blank">
+                    <img class="platform-images" src="images/linkedin.png">
+                </a>
+                <a class="platform-links" href="https://medium.com/@balanquitchristian13" target="_blank">
+                    <img class="platform-images-medium" src="images/medium.png">
+                </a>
             </div>
-            <p>Copyright © 2023 Christian Balanquit</p>
-        </footer>
-    </body>
+        </div>
+        <p>Copyright © 2023 Christian Balanquit</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
 </html>

@@ -1,124 +1,193 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Experience: Christian Balanquit</title>
-        <link rel="stylesheet" href="templates/main.css">
-    </head>
-    <body>
+<head>
+	<title>Experience: Christian Balanquit</title>
+	<link rel="stylesheet" href="templates/main.css">
+</head>
 
-            <!--Header-->
-            <section id="header" class="section-wrapper">
-                <div class="container main-menu">
-                    <div id="top-left-logo">
-                        <p>ChanTheDataExplorer</p>
-                    </div>
-                    <nav class="nav-menu-container">
-                        <ul class="nav-menu">
-                            <li class="menu-nav-list"><a class="link" href="index.html">Home</a></li>
-                            <li class="menu-nav-list"><a class="active link" href="experience.html">Experience</a></li>
-                            <li class="menu-nav-list"><a class="link" href="projects.html">Projects</a></li>
-                            <li class="menu-nav-list"><a class="link" href="blogs.html">Blogs</a></li>
-                            <li class="menu-nav-list"><a class="link" href="about.html">About Me</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </section>
+<style>
+	.work-experience {
+		background-color: #f5feff;
+		border-width: 1px;
+		border-style: solid;
+		border-color: black;
+		border-radius: 1em;
+		
+		display: flex;
+		width: 60%;
 
-            <!--Intro-->
-            <section id="intro" class="section-wrapper">
-                <div class="spec-content-header">
-                    <h1>Professional Experience</h1>
-                    <span class="paragraphs-info">
-                        <p>
-                            A Data Enthusiast with 4 years of proven experience in data analytics and data engineering in the 
-                            field of manufacturing, business-process outsourcing, and restaurant industries.
-                        </p>
-                    </span>
-					<a href="https://drive.google.com/file/d/11ix_01EbImVqavXc7K7R-RgRxU2Tk4lI/view?usp=sharing" target="_blank">
-						<button class="resume-button">Download CV</button>
-					</a>
-					
-                </div>
-            </section>
+		padding: 0.6em;
+		
+		margin-inline: auto;
+		margin-bottom: 2em;
 
-            <!--Career-->
-            <section id="content" class="section-wrapper-content">
-				<div class="work-experience">
-					<div class="work-experience-content">
-						<h2>Data Engineer</h2>
-						<p>TE Connectivity</p>
-						<p>Nov 2022 - Present</p>
-						<ul>
-							<li>
-								Migration of data products from legacy-based applications to Cloud-based solutions in AWS
-							</li>
-						</ul>	
-					</div>
+		justify-content: center;
+	}
+
+	.work-experience-content {
+		text-align:justify;
+		width: 95%;
+	}
+
+	.work-experience li {
+		padding-top: 0.3em;
+		padding-bottom: 0.3em;
+	}
+
+	.resume-button {
+		display: inline-block;
+
+		background-color:#252525;
+		border-radius: 0.25em;
+		border: none;
+		color: white;
+
+		padding: 1em 3em;
+		margin-top: 1em;
+
+		text-align: center;
+		text-decoration: none;
+		
+		font-size: 1.2em;
+	}
+
+	.resume-button:hover {
+		background-color: #dadada;
+		color:#252525;
+		cursor: pointer;
+		}
+	
+	@media screen and (max-width: 68em) {
+		.work-experience {
+			width: 90%;
+			padding: 0 em;
+		}
+
+		.work-experience-content {
+			line-height: 1.4em;
+		}
+	}
+</style>
+
+<body>
+	<header id="header" class="section-header">
+		<div class="container main-menu">
+			<nav class="navbar">
+				<a class="logo" href='index.html'>ChanTheDataExplorer</a>
+				<ul class="nav-menu">
+					<li class="menu-nav-list"><a class="active link" href="index.html">Home</a></li>
+					<li class="menu-nav-list"><a class="link" href="experience.html">Experience</a></li>
+					<li class="menu-nav-list"><a class="link" href="projects.html">Projects</a></li>
+					<!--
+						<li class="menu-nav-list"><a class="link" href="blogs.html">Blogs</a></li>
+						FOR NEXT IMPLEMENTATION
+					-->
+					<li class="menu-nav-list"><a class="link" href="about.html">About Me</a></li>
+				</ul>
+				<div class="hamburger">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
 				</div>
-				<div class="work-experience">
-					<div class="work-experience-content">
-						<h2>Data Engineer/BI Developer</h2>
-						<p>Yondu, Inc.</p>
-						<p>Mar 2022 - Nov 2022</p>
-						<ul>
-							<li>
-								Development of streaming-data analytics about user behavior in mobile ordering application
-							</li>
-							<li>
-								Migration of data products from legacy-based and GCP-based applications to AWS
-							</li>
-							<li>
-								Improved the overall accuracy of AWS data from 85% to 95% by correcting the SQL queries,
-								incorporating the right business logics used in the in-house system, and collaborating with the IT
-								operations on the errors occurring in the sending of data from POS machines to AWS
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="work-experience">
-					<div class="work-experience-content">
-						<h2>Business Operations Analyst</h2>
-						<p>Reed Elsevier Philippines (REPH)</p>
-						<p>Jul 2021- Feb 2022</p>
-						<ul>
-							<li>
-								Supported the Finance business unit comprising of 20+ teams in building their capacity planning
-								(manpower capacity requirements) by transforming their operational business logic into data ready
-								inputs and parameters such as task, task type, task frequency, task complexity, volumes, etc.
-							</li>
-							<li>Created a user-friendly Excel template for use of the supervisors and managers involved in the
-								Enterprise Capacity Planning by developing a Visual Basic for Excel Program
-							</li>
-							<li>
-								Developed automation in extraction of data from 100+ files using Visual Basic for Excel. From 3-5 days
-								of manual data extraction, it significantly reduced to 10-15 minutes just by clicking a button in the
-								extraction tool
-							</li>
-							<li>
-								Created a dashboard in Power BI using the extracted data from the automated extraction. Cleaning
-								and transformation of data are done using Power Query
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="work-experience">
-					<div class="work-experience-content">
-						<h2>Process Innovation Engineer</h2>
-						<p>Samsung Electro-Mechanics Philippines Corp. (SEMPHIL)</p>
-						<p>Jul 2018 - Jul 2021</p>
-						<ul>
-							<li>
-								Conduct KPI-related improvements through root cause analysis and process/system improvement with
-								continuous collaboration with production leaders and machine automation experts
-							</li>
-							<li>
-								Created an Excel Dashboard for easier ingestion of system-extracted data and faster analysis for use of
-								production leaders and innovation group
-							</li>
-						</ul>
-					</div>
-				</div>
-            </section>
+			</nav>
+		</div>
+	</header>
+
+	<!--Intro-->
+	<section id="intro" class="section-wrapper">
+		<div class="intro-card">
+			<h1>Professional Experience</h1>
+			<span class="paragraphs-info">
+				<p>
+					A Data Enthusiast with 4 years of proven experience in data analytics and data engineering in the 
+					field of manufacturing, business-process outsourcing, and restaurant industries.
+				</p>
+			</span>
+			<a class="resume" href="https://drive.google.com/file/d/11ix_01EbImVqavXc7K7R-RgRxU2Tk4lI/view?usp=sharing" target="_blank">
+				<button class="resume-button">Download CV</button>
+			</a>
+			
+		</div>
+	</section>
+
+	<!--Career-->
+	<section id="content" class="section-wrapper-content">
+		<div class="work-experience">
+			<div class="work-experience-content">
+				<h2>Data Engineer</h2>
+				<p>TE Connectivity</p>
+				<p>Nov 2022 - Present</p>
+				<ul>
+					<li>
+						Migration of data products from legacy-based applications to Cloud-based solutions in AWS
+					</li>
+				</ul>	
+			</div>
+		</div>
+		<div class="work-experience">
+			<div class="work-experience-content">
+				<h2>Data Engineer/BI Developer</h2>
+				<p>Yondu, Inc.</p>
+				<p>Mar 2022 - Nov 2022</p>
+				<ul>
+					<li>
+						Development of streaming-data analytics about user behavior in mobile ordering application
+					</li>
+					<li>
+						Migration of data products from legacy-based and GCP-based applications to AWS
+					</li>
+					<li>
+						Improved the overall accuracy of AWS data from 85% to 95% by correcting the SQL queries,
+						incorporating the right business logics used in the in-house system, and collaborating with the IT
+						operations on the errors occurring in the sending of data from POS machines to AWS
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="work-experience">
+			<div class="work-experience-content">
+				<h2>Business Operations Analyst</h2>
+				<p>Reed Elsevier Philippines (REPH)</p>
+				<p>Jul 2021- Feb 2022</p>
+				<ul>
+					<li>
+						Supported the Finance business unit comprising of 20+ teams in building their capacity planning
+						(manpower capacity requirements) by transforming their operational business logic into data ready
+						inputs and parameters such as task, task type, task frequency, task complexity, volumes, etc.
+					</li>
+					<li>Created a user-friendly Excel template for use of the supervisors and managers involved in the
+						Enterprise Capacity Planning by developing a Visual Basic for Excel Program
+					</li>
+					<li>
+						Developed automation in extraction of data from 100+ files using Visual Basic for Excel. From 3-5 days
+						of manual data extraction, it significantly reduced to 10-15 minutes just by clicking a button in the
+						extraction tool
+					</li>
+					<li>
+						Created a dashboard in Power BI using the extracted data from the automated extraction. Cleaning
+						and transformation of data are done using Power Query
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="work-experience">
+			<div class="work-experience-content">
+				<h2>Process Innovation Engineer</h2>
+				<p>Samsung Electro-Mechanics Philippines Corp. (SEMPHIL)</p>
+				<p>Jul 2018 - Jul 2021</p>
+				<ul>
+					<li>
+						Conduct KPI-related improvements through root cause analysis and process/system improvement with
+						continuous collaboration with production leaders and machine automation experts
+					</li>
+					<li>
+						Created an Excel Dashboard for easier ingestion of system-extracted data and faster analysis for use of
+						production leaders and innovation group
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
 
 			<footer>
                 <div class="footer-container">
@@ -136,5 +205,7 @@
                 </div>
                 <p>Copyright © 2023 Christian Balanquit</p>
             </footer>
+		
+			<script src="scripts/main.js"></script>
     </body>
 </html>

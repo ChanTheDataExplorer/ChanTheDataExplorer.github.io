@@ -4,28 +4,127 @@
         <title>Projects: Christian Balanquit</title>
         <link rel="stylesheet" href="templates/main.css">
     </head>
+    <style>
+        .link-text {
+            text-decoration: none;
+            color:#567279;
+            font-size: 1.5em;
+        }
+        .link-text:hover {
+            background-color: #002a4e;
+            color: rgb(255, 255, 255);
+        }
+
+        #content {
+            margin-inline: auto;
+        }
+
+        .proj-thumb img {
+            max-width: 100%;
+
+            vertical-align: middle;
+        }
+        .project-content-single:hover {
+            transform: scale(1.1);
+
+            transition: all 0.2s ease-in-out;
+        }
+
+
+
+        @media screen and (min-width: 68em) {
+            #content {
+                width: 50%;
+            }
+
+            .project-content-small {
+                display:none;
+            }
+
+            .project-content-single {
+                display: flex;
+                justify-content: space-between;
+
+                gap: 2.0em;
+                margin-bottom: 6em;
+                
+                padding: 0.2em;
+
+                align-items: center;
+            }
+
+            .proj-thumb {
+                width: 40%;
+            }
+            .project-info {
+                width: 60%;
+                text-align: justify;
+                line-height: 1.3em;
+
+                padding-top: 0.5em;
+                padding-inline: 0em;
+                padding-right: 1em;
+                padding-left: 1em;
+                align-items: center;
+            }
+        }
+        
+        @media screen and (max-width: 68em) {
+            #content {
+                width: 90%;
+            }
+
+            .project-content-large {
+                display: none;
+            }
+            .project-content-single {
+                display:block;
+
+                margin-inline: auto;
+                margin-bottom: 3em;
+                
+                align-items: center;
+            }
+            .project-info {
+                text-align: justify;
+                line-height: 1.1em;
+
+                padding-top: 0.5em;
+                padding-inline: 0em;
+                align-items: center;
+            }
+        }
+
+        
+    </style>
     <body>
         <!--Header-->
-        <section id="header" class="section-wrapper">
+        <header id="header" class="section-header">
             <div class="container main-menu">
-                <div id="top-left-logo">
-                    <p>ChanTheDataExplorer</p>
-                </div>
-                <nav class="nav-menu-container">
+                <nav class="navbar">
+                    <a class="logo" href='index.html'>ChanTheDataExplorer</a>
                     <ul class="nav-menu">
-                        <li class="menu-nav-list"><a class="link" href="index.html">Home</a></li>
+                        <li class="menu-nav-list"><a class="active link" href="index.html">Home</a></li>
                         <li class="menu-nav-list"><a class="link" href="experience.html">Experience</a></li>
-                        <li class="menu-nav-list"><a class="active link" href="projects.html">Projects</a></li>
-                        <li class="menu-nav-list"><a class="link" href="blogs.html">Blogs</a></li>
+                        <li class="menu-nav-list"><a class="link" href="projects.html">Projects</a></li>
+                        <!--
+                            <li class="menu-nav-list"><a class="link" href="blogs.html">Blogs</a></li>
+                            FOR NEXT IMPLEMENTATION
+                        -->
                         <li class="menu-nav-list"><a class="link" href="about.html">About Me</a></li>
                     </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
                 </nav>
             </div>
-        </section>
+        </header>
 
         <!--Intro-->
         <section id="intro" class="section-wrapper">
-            <div class="spec-content-header">
+            <div class="intro-card">
                 <h1>Project Portfolio</h1>
                 <span class="paragraphs-info">
                     <p>
@@ -37,52 +136,105 @@
 
         <!--Projects-->
         <section id="content" class="section-wrapper-content">
-            <div class="project-content-single">
-                <div class="proj-thumb">
-                    <img class="content-image" src="https://images.unsplash.com/photo-1610701596061-2ecf227e85b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8a2l0Y2hlbndhcmV8ZW58MHx8MHx8&w=1000&q=80">
+            <div class="project-content-large">
+                <div class="project-content-single">
+                    <div class="proj-thumb">
+                        <img class="content-image" src="images/kitchenware-image.jpg">
+                    </div>
+                    <div class="project-info">
+                        <a class="link-text" href="https://github.com/ChanTheDataExplorer/mlzoomcamp_capstone1_chan.git" target="_blank">
+                            Kitchenware Classification
+                        </a>
+                        <p>
+                            In this project, we used Deep Learning to predict if an image is a spoon, knife, plate, cup, glass, or a fork.
+                            A total of 4445 images was used to train the model. The model's accuracy is around 95.5%
+                        </p>
+                    </div>
                 </div>
-                <div class="project-info">
-                    <a class="link-text" href="https://github.com/ChanTheDataExplorer/mlzoomcamp_capstone1_chan.git" target="_blank">
-                        Kitchenware Classification
-                    </a>
-                    <p>
-                        In this project, we used Deep Learning to predict if an image is a spoon, knife, plate, cup, glass, or a fork.
-                        A total of 4445 images was used to train the model. The model's accuracy is around 95.5%
-                    </p>
+                <div class="project-content-single">
+                    
+                    <div class="project-info">
+                        <a class="link-text" href="https://github.com/ChanTheDataExplorer/MLProject_Dota2" target="_blank">
+                            Radiant or Dire?
+                        </a>
+                        <p>
+                            Who do you think will win? Light or Dark? Good or Bad? RADIANT OR DIRE?
+                            In this project, we used Machine Learning to predict the winner of a Dota 2 match 
+                            using pre-game features: region, cluster, time, average winrates, players skills, 
+                            and player heroes.
+                        </p>
+                    </div>
+                    <div class="proj-thumb">
+                        <img class="content-image" src="https://www.talkesport.com/wp-content/uploads/c632b3bc2ec8f30871d02bb21d3e29e2.jpg">
+                    </div>
+                </div>
+                <div class="project-content-single">
+                    <div class="proj-thumb">
+                        <img class="content-image" src="images/spotify-etl.jpg">
+                    </div>
+                    <div class="project-info">
+                        <a class="link-text" href="https://github.com/ChanTheDataExplorer/mlzoomcamp_capstone1_chan.git" target="_blank">
+                            Spotify API Data Pipeline
+                        </a>
+                        <p>
+                            In this project, data is captured from the Spotify Web API using the python request module. 
+                            The data collected from the Spotify Web API is stored in CSV file, JSON file, and SQL Serve database. 
+                            ETL jobs are written in python and scheduled in airflow to run every 12 midnight (UTC).
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="project-content-single">
-                
-                <div class="project-info">
-                    <a class="link-text" href="https://github.com/ChanTheDataExplorer/MLProject_Dota2" target="_blank">
-                        Radiant or Dire?
-                    </a>
-                    <p>
-                        Who do you think will win? Light or Dark? Good or Bad? RADIANT OR DIRE?
-                        In this project, we used Machine Learning to predict the winner of a Dota 2 match 
-                        using pre-game features: region, cluster, time, average winrates, players skills, 
-                        and player heroes.
-                    </p>
+
+            <div class="project-content-small">
+                <div class="project-content-single">
+                    <div class="proj-thumb">
+                        <img class="content-image" src="images/kitchenware-image.jpg">
+                    </div>
+                    <div class="project-info">
+                        <a class="link-text" href="https://github.com/ChanTheDataExplorer/mlzoomcamp_capstone1_chan.git" target="_blank">
+                            Kitchenware Classification
+                        </a>
+                        <p>
+                            In this project, we used Deep Learning to predict if an image is a spoon, knife, plate, cup, glass, or a fork.
+                            A total of 4445 images was used to train the model. The model's accuracy is around 95.5%
+                        </p>
+                    </div>
                 </div>
-                <div class="proj-thumb">
-                    <img class="content-image" src="https://www.talkesport.com/wp-content/uploads/c632b3bc2ec8f30871d02bb21d3e29e2.jpg">
+                <div class="project-content-single">
+                    <div class="proj-thumb">
+                        <img class="content-image" src="https://www.talkesport.com/wp-content/uploads/c632b3bc2ec8f30871d02bb21d3e29e2.jpg">
+                    </div>
+
+                    <div class="project-info">
+                        <a class="link-text" href="https://github.com/ChanTheDataExplorer/MLProject_Dota2" target="_blank">
+                            Radiant or Dire?
+                        </a>
+                        <p>
+                            Who do you think will win? Light or Dark? Good or Bad? RADIANT OR DIRE?
+                            In this project, we used Machine Learning to predict the winner of a Dota 2 match 
+                            using pre-game features: region, cluster, time, average winrates, players skills, 
+                            and player heroes.
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="project-content-single">
+                    <div class="proj-thumb">
+                        <img class="content-image" src="images/spotify-etl.jpg">
+                    </div>
+                    <div class="project-info">
+                        <a class="link-text" href="https://github.com/ChanTheDataExplorer/mlzoomcamp_capstone1_chan.git" target="_blank">
+                            Spotify API Data Pipeline
+                        </a>
+                        <p>
+                            In this project, data is captured from the Spotify Web API using the python request module. 
+                            The data collected from the Spotify Web API is stored in CSV file, JSON file, and SQL Serve database. 
+                            ETL jobs are written in python and scheduled in airflow to run every 12 midnight (UTC).
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="project-content-single">
-                <div class="proj-thumb">
-                    <img class="content-image" src="images/spotify-etl.png">
-                </div>
-                <div class="project-info">
-                    <a class="link-text" href="https://github.com/ChanTheDataExplorer/mlzoomcamp_capstone1_chan.git" target="_blank">
-                        Spotify API Data Pipeline
-                    </a>
-                    <p>
-                        In this project, data is captured from the Spotify Web API using the python request module. 
-                        The data collected from the Spotify Web API is stored in CSV file, JSON file, and SQL Serve database. 
-                        ETL jobs are written in python and scheduled in airflow to run every 12 midnight (UTC).
-                    </p>
-                </div>
-            </div>
+            
         </section>
 
         <footer>
@@ -101,5 +253,7 @@
             </div>
             <p>Copyright © 2023 Christian Balanquit</p>
         </footer>
+
+        <script src="scripts/main.js"></script>
     </body>
 </html>

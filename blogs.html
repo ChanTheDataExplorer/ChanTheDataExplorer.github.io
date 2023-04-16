@@ -7,22 +7,28 @@
     </head>
     <body>
         <!--Header-->
-        <section id="header" class="section-wrapper">
+        <header id="header" class="section-header">
             <div class="container main-menu">
-                <div id="top-left-logo">
-                    <p>ChanTheDataExplorer</p>
-                </div>
-                <nav class="nav-menu-container">
+                <nav class="navbar">
+                    <a class="logo" href='index.html'>ChanTheDataExplorer</a>
                     <ul class="nav-menu">
-                        <li class="menu-nav-list"><a class="link" href="index.html">Home</a></li>
+                        <li class="menu-nav-list"><a class="active link" href="index.html">Home</a></li>
                         <li class="menu-nav-list"><a class="link" href="experience.html">Experience</a></li>
                         <li class="menu-nav-list"><a class="link" href="projects.html">Projects</a></li>
-                        <li class="menu-nav-list"><a class="active link" href="blogs.html">Blogs</a></li>
+                        <!--
+                            <li class="menu-nav-list"><a class="link" href="blogs.html">Blogs</a></li>
+                            FOR NEXT IMPLEMENTATION
+                        -->
                         <li class="menu-nav-list"><a class="link" href="about.html">About Me</a></li>
                     </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
                 </nav>
             </div>
-        </section>
+        </header>
 
         <!--Intro-->
         <section id="under-construction" class="section-wrapper">
@@ -50,5 +56,7 @@
             </div>
             <p>Copyright © 2023 Christian Balanquit</p>
         </footer>
+
+        <script src="scripts/main.js"></script>
     </body>
 </html>

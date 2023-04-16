@@ -4,24 +4,101 @@
         <title>About Me: Christian Balanquit</title>
         <link rel="stylesheet" href="templates/main.css">
     </head>
+    <style>
+        @media (min-width: 68em) {
+            .aboutme-personal {
+                display: grid;
+                width: 50%;
+                grid-template-columns: 45% 50%;
+                gap:5%;
+
+                margin-top: 12em;
+                margin-bottom: 5em;
+                margin-inline: auto;
+                
+                justify-content: center;
+                align-items: center;
+            }
+
+            .aboutme-personal-content {
+                max-width: 100%;
+                grid-column: 1;
+                text-align:justify;
+
+                line-height: 1.7em;
+            }
+
+            .aboutme-photo {
+                grid-column: 2;
+                height: auto;
+                width: 90%
+            }
+
+            .aboutme-photo img {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 68em) {
+            .aboutme-personal {
+                display: block;
+                width: 75%;
+
+                margin-top: 12em;
+                margin-bottom: 5em;
+                margin-inline: auto;
+                
+                justify-content: center;
+                align-items: center;
+            }
+
+            .aboutme-personal-content {
+                text-align:justify;
+
+                line-height: 1.7em;
+
+                justify-content: center;
+                align-items: center;
+            }
+
+            .aboutme-photo {
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .aboutme-photo img {
+                max-width: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        
+    </style>
     <body>
         <!--Header-->
-        <section id="header" class="section-wrapper">
+        <header id="header" class="section-header">
             <div class="container main-menu">
-                <div id="top-left-logo">
-                    <p>ChanTheDataExplorer</p>
-                </div>
-                <nav class="nav-menu-container">
+                <nav class="navbar">
+                    <a class="logo" href='index.html'>ChanTheDataExplorer</a>
                     <ul class="nav-menu">
-                        <li class="menu-nav-list"><a class="link" href="index.html">Home</a></li>
+                        <li class="menu-nav-list"><a class="active link" href="index.html">Home</a></li>
                         <li class="menu-nav-list"><a class="link" href="experience.html">Experience</a></li>
                         <li class="menu-nav-list"><a class="link" href="projects.html">Projects</a></li>
-                        <li class="menu-nav-list"><a class="link" href="blogs.html">Blogs</a></li>
-                        <li class="menu-nav-list"><a class="active link" href="about.html">About Me</a></li>
+                        <!--
+                            <li class="menu-nav-list"><a class="link" href="blogs.html">Blogs</a></li>
+                            FOR NEXT IMPLEMENTATION
+                        -->
+                        <li class="menu-nav-list"><a class="link" href="about.html">About Me</a></li>
                     </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
                 </nav>
             </div>
-        </section>
+        </header>
 
         <!--About Me-->
         <section id="content" class="section-wrapper-content">
@@ -46,7 +123,7 @@
                         in German language. Now, I am doing some Duolingo exercise to learn the basics.
                     </p>
                 </div>
-                <div>
+                <div class = "aboutme-photo">
                     <img class="aboutme-image" src="images/chan_image.jpg">
                 </div>
             </div>
@@ -68,5 +145,7 @@
             </div>
             <p>Copyright © 2023 Christian Balanquit</p>
         </footer>
+
+        <script src="scripts/main.js"></script>
     </body>
 </html>
