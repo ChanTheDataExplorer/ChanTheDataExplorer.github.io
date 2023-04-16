@@ -122,6 +122,9 @@ body {
 }
 
 @media screen and (max-width: 68em) {
+    body {
+        font-size: 1.5em;
+    }
     .hamburger {
         display: block;
         cursor: pointer;
