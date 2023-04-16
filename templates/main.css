@@ -123,7 +123,7 @@ body {
 
 @media screen and (max-width: 68em) {
     body {
-        font-size: 1.4em;
+        font-size: 1.6em;
     }
 
     .hamburger {
@@ -184,7 +184,9 @@ body {
 
 @media screen and (max-width: 68em) {
     #intro {
+        width: 90%;
         margin-top: 30%;
+        font-size: 120%;
     }
 }
   
